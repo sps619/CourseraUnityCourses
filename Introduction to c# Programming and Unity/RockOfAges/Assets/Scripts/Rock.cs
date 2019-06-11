@@ -6,8 +6,8 @@ public class Rock : MonoBehaviour {
 
     int rockCounter;
 
-    const float MinImpulseForce = 1f;
-    const float MaxImpulseForce = 2f;
+    const float MinImpulseForce = 2f;
+    const float MaxImpulseForce = 5f;
 
     Timer lifeTime;
     const float lifeTimeInSeconds = 3f;
@@ -16,12 +16,9 @@ public class Rock : MonoBehaviour {
     {
         // apply impulse force to get game object moving
         float angle = Random.Range(0, 2 * Mathf.PI);
-        Vector2 direction = new Vector2(
-            Mathf.Cos(angle), Mathf.Sin(angle));
+        Vector2 direction = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
         float magnitude = Random.Range(MinImpulseForce, MaxImpulseForce);
-        GetComponent<Rigidbody2D>().AddForce(
-            direction * magnitude,
-            ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().AddForce(direction * magnitude,ForceMode2D.Impulse);
 
         lifeTime = gameObject.AddComponent<Timer>();
         lifeTime.Duration = lifeTimeInSeconds;
@@ -30,8 +27,7 @@ public class Rock : MonoBehaviour {
 
     private void Update()
     {
-        if (lifeTime.Finished)
-            Destroy(this.gameObject);
+        
     }
 
     private void OnBecameInvisible()

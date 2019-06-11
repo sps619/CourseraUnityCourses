@@ -33,25 +33,23 @@ public class RockSpawner : MonoBehaviour {
         minSpawnY = SpawnBorderSize;
         maxSpawnY = Screen.height - SpawnBorderSize;
 
-        SpawnPrefab();
+        SpawnRock();
     }
 
     void Update()
     {
         rockCounter = GameObject.FindGameObjectsWithTag("Rock").Length;
-        if (rockCounter < 3)
-            SpawnPrefab();
-
-        if (timer.Finished)
+        
+        if (timer.Finished && rockCounter < 3)
         {
-            SpawnPrefab();
+            SpawnRock();
 
             timer.Duration = Random.Range(minSpawnTime, maxSpawnTime);
             timer.Run();
         }
     }
 
-    void SpawnPrefab()
+    void SpawnRock()
     {
         Vector3 location = new Vector3(Random.Range(minSpawnX, maxSpawnX), Random.Range(minSpawnY, maxSpawnY), -Camera.main.transform.position.z);
 
