@@ -1,6 +1,6 @@
 WebGL
 PlayerPath?
-C:/Users/shubh/Desktop/CourseraUnityCourses/Introduction to c# Programming and Unity/RockOfAges/Build
+C:/Users/shubh/Desktop/rock-of-ages
 SceneListBegin?
 Assets/Scenes/Main.unity
 SceneListEnd?
@@ -133,6 +133,7 @@ e0ee4b3d4e27318934cc940a969d3d96 UnityEngine.Networking.dll:UnityEngine.Networki
 ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+510fefd6a544e16a3ffefa557ddcba39 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 aa82b3ce4c0c9b227036c0337315c5d3 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 e51c09a4cc447f11db225afcd8e3e490 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.BeforeAfterTestCommandState
